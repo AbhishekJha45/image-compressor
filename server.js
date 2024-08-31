@@ -12,7 +12,6 @@ app.get('/',(req,res)=>{
 })
 const connectToMongoDB = async () => {
     try{
-        //createSuperAdmin()
         await mongoose.connect(process.env.MONGODB_URI);
         console.log('Connected to MongoDB Atlas');
     }
